@@ -109,10 +109,6 @@ button:hover {
 	opacity: 0.8;
 }
 
-#prevBtn {
-	background-color: #bbbbbb;
-}
-
 /* Make circles that indicate the steps of the form: */
 .step {
 	height: 25px;
@@ -156,7 +152,7 @@ button:hover {
 			<h1>Letter of Last Instruction</h1>
 		</div>
 		<% String hidden = request.getParameter("clientname"); %>
-         <h3>Client Name: <%=hidden %></h3>
+         <h3>Client Name: <%=hidden.replace("_"," ") %></h3>
 		<input type="hidden" name="clientname" id="clientname" value=<%=hidden %>></input>
 		<!-- Circles which indicates the steps of the form: -->
 		<div style="text-align: center; margin-top: 10px;">
@@ -167,7 +163,7 @@ button:hover {
 		</div>
 		<div style="overflow: auto;">
 			<div style="float: right;">
-				<button type="button" id="prevBtn" class="btn btn-default"
+				<button type="button" id="prevBtn" class="btn btn-success"
 					onclick="nextPrev(-1)">Previous</button>
 				<button type="button" id="nextBtn" class="btn btn-success"
 					onclick="nextPrev(1)">Next</button>
@@ -218,7 +214,7 @@ button:hover {
 				document.getElementById("prevBtn").style.display = "inline";
 			}
 			if (n == (x.length - 1)) {
-				document.getElementById("nextBtn").innerHTML = "Logout"
+				document.getElementById("nextBtn").style.display = "none";
 			} else {
 				document.getElementById("nextBtn").innerHTML = "Next";
 			}

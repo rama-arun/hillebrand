@@ -1,5 +1,5 @@
-<button type="button" class="btn btn-danger" id="pdfDownloader">Download
-	this Page!</button>
+<button type="button" class="btn-sm btn-primary" id="pdfDownloader">Download
+	Checklist!</button>
 <div class="row clearfix">
 	<div class="col-md-12 column">
 		<div class="col-md-12">
@@ -540,7 +540,7 @@
 				<p class=MsoNoSpacing align=justified
 					style='text-align: center; border: none; mso-border-top-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; padding: 0in; mso-padding-alt: 1.0pt 0in 1.0pt 0in'>
 					<b style='mso-bidi-font-weight: normal'><span
-						style='font-size: 8.0pt; mso-bidi-font-size: 12.0pt; font-family: "Garamond"'>©
+						style='font-size: 8.0pt; mso-bidi-font-size: 12.0pt; font-family: "Garamond"'>ï¿½
 							John Vyge, 2017. This document is not a legal document nor is it
 							designed to give any specific legal advice pertaining to any
 							specific circumstances. It is important that professional legal

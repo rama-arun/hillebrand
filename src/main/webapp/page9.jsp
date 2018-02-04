@@ -1,5 +1,17 @@
-<button type="button" class="btn btn-danger" id="page9pdf">Download
-	this Page!</button>
+<script>
+var user = document.getElementById("userId").value;
+var client = document.getElementById("clientname").value;
+var pdf = 'http://localhost:8081/download.pdf?user='+user+'&client='+client;
+var xls = 'http://localhost:8081/download.xls?user='+user+'&client='+client;
+</script>
+
+<a href="" id="print" class="btn btn-sm btn-primary">Download PDF</a>
+<a href="" id="xls" class="btn btn-sm btn-primary">Download EXCEL</a>
+
+<script>
+document.getElementById("print").href = pdf;
+document.getElementById("xls").href = xls;
+</script>
 <div id="page9">
 	<!-- Modal -->
 	<div class="modal fade" id="modal_page9">
@@ -64,7 +76,7 @@
 			<p class=MsoNoSpacing align=justified
 				style='text-align: center; border: none; mso-border-top-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; padding: 0in; mso-padding-alt: 1.0pt 0in 1.0pt 0in'>
 				<b style='mso-bidi-font-weight: normal'><span
-					style='font-size: 8.0pt; mso-bidi-font-size: 12.0pt; font-family: "Garamond"'>©
+					style='font-size: 8.0pt; mso-bidi-font-size: 12.0pt; font-family: "Garamond"'>ï¿½
 						John Vyge, 2017. This document is not a legal document nor is it
 						designed to give any specific legal advice pertaining to any
 						specific circumstances. It is important that professional legal
@@ -136,20 +148,5 @@ document.getElementById('forClient9').value = document
 		error : function() {
 			alert("asda");
 		}
-	});
-	$("#page9pdf").click(function() {
-		var doc = new jsPDF("p", "mm", "letter");
-		
-		var width = 200;
-		html2canvas(document.getElementById("page9"), {
-			onrendered : function(canvas) {
-
-				var imgData = canvas.toDataURL("image/png");
-				var doc = new jsPDF();
-				doc.addImage(imgData, 'JPEG', 10, 10, width, 0);
-				doc.save('page9.pdf');
-			}
-
-		});
 	});
 </script>

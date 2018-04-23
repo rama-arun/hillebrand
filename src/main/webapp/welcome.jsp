@@ -161,6 +161,21 @@ button:hover {
 			<span class="step">6</span> <span class="step">7</span> <span
 				class="step">8</span> <span class="step">9</span>
 		</div>
+
+<script>
+var user = document.getElementById("userId").value;
+var client = document.getElementById("clientname").value;
+var pdf = 'http://18.217.195.1:8081/download.pdf?user='+user+'&client='+client;
+var xls = 'http://18.217.195.1:8081/download.xls?user='+user+'&client='+client;
+</script>
+
+<a href="" id="print" class="btn btn-sm btn-primary">Download PDF</a>
+<a href="" id="xls" class="btn btn-sm btn-primary">Download EXCEL</a>
+
+<script>
+document.getElementById("print").setAttribute("href", pdf);
+document.getElementById("xls").setAttribute("href", xls);
+</script>
 		<div style="overflow: auto;">
 			<div style="float: right;">
 				<button type="button" id="prevBtn" class="btn btn-success"

@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <script>
 var user = document.getElementById("userId").value;
 var client = document.getElementById("clientname").value;

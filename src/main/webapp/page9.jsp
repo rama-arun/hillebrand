@@ -9,8 +9,8 @@ var xls = 'http://18.217.195.1:8081/download.xls?user='+user+'&client='+client;
 <a href="" id="xls" class="btn btn-sm btn-primary">Download EXCEL</a>
 
 <script>
-document.getElementById("print").href = pdf;
-document.getElementById("xls").href = xls;
+document.getElementById("print").setAttribute("href", pdf);
+document.getElementById("xls").setAttribute("href", xls);
 </script>
 <div id="page9">
 	<!-- Modal -->

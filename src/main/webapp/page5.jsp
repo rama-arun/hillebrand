@@ -1,19 +1,4 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
-<script>
-var user = document.getElementById("userId").value;
-var client = document.getElementById("clientname").value;
-var pdf = 'http://18.217.195.1:8081/download.pdf?user='+user+'&client='+client;
-var xls = 'http://18.217.195.1:8081/download.xls?user='+user+'&client='+client;
-</script>
-
-<a href="" id="print" class="btn btn-sm btn-primary">Download PDF</a>
-<a href="" id="xls" class="btn btn-sm btn-primary">Download EXCEL</a>
-
-<script>
-document.getElementById("print").setAttribute("href", pdf);
-document.getElementById("xls").setAttribute("href", xls);
-</script>
 <div id="page5">
 	<!-- Modal -->
 	<div class="modal fade" id="modal_page5">

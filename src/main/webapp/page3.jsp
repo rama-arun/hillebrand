@@ -1,8 +1,8 @@
 <script>
 var user = document.getElementById("userId").value;
 var client = document.getElementById("clientname").value;
-var pdf = 'http://localhost:8081/download.pdf?user='+user+'&client='+client;
-var xls = 'http://localhost:8081/download.xls?user='+user+'&client='+client;
+var pdf = 'http://18.217.195.1:8081/download.pdf?user='+user+'&client='+client;
+var xls = 'http://18.217.195.1:8081/download.xls?user='+user+'&client='+client;
 </script>
 
 <a href="" id="print" class="btn btn-sm btn-primary">Download PDF</a>
